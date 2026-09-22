@@ -7,7 +7,7 @@ This is a production-grade DevOps/SRE platform built over 12 weeks, starting fro
 See [architecture.md](./architecture.md) for the full diagram — request path, service mesh, and the GitOps control loop that keeps the cluster reconciled.
 
 ## Platform Tour
-No recorded walkthrough — see [platform-tour.md](./platform-tour.md) for a written tour covering the same ground: GitOps sync, the live dashboard, a chaos experiment recovering, and an alert firing end to end.
+See [platform-tour.md](./platform-tour.md) for a written tour covering the same ground: GitOps sync, the live dashboard, a chaos experiment recovering, and an alert firing end to end.
 
 ## What I Built
 - [Linux Server Hardening & Web Serving](https://github.com/tesddev/server-bootstrap) — hardened Ubuntu EC2 server, SSH lockdown, UFW, Nginx + Let's Encrypt, idempotent setup script
@@ -37,7 +37,7 @@ See [ADR.md](./ADR.md) — six decisions: cloud provider, Kubernetes distributio
 - [Ansible](https://docs.ansible.com/)
 
 **Containers & CI/CD**
-- [Docker](https://docs.docker.com/) / [Docker Compose](https://docs.docker.com/compose/) / [Buildx](https://docs.docker.com/build/buildx/)
+- [Docker](https://docs.docker.com/) / [Docker Compose](https://docs.docker.com/compose/) / [Buildx](https://docs.docker.com/build/concepts/overview/#buildx)
 - [GitHub Actions](https://docs.github.com/en/actions)
 - [GHCR](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 
