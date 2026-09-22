@@ -64,16 +64,3 @@
 **Decision:** Linkerd.
 
 **Consequences:** mTLS and per-service metrics came essentially for free once namespaces were mesh-injected — confirmed directly via `linkerd viz tap` rather than assumed. The resource footprint concern was real, though: Linkerd's own control-plane pods contributed to hitting the per-node pod-density ceiling (EKS caps pods per node by ENI/IP allocation, not CPU/memory) once Chaos Mesh was added alongside it — a genuine capacity trade-off, not a hypothetical one.
-
-## ADR-06: Scope — stopping after DevSecOps, skipping Platform Engineering
-
-**Context:** AWS free-tier budget was running low with two structured areas of work remaining (Platform Engineering — Backstage, multi-environment approval gates, FinOps tooling, Velero) before the final production platform work.
-
-**Options considered:**
-- **Push through both remaining areas before the final platform work** — most complete against the original roadmap, but risked running out of AWS budget mid-build with nothing finished
-- **Skip straight to the final platform work, documenting the cut honestly** — less roadmap coverage, but protects the time and budget for the highest-signal, most integrative piece of work
-- **Do a shallow pass on everything** — technically touches every area, but produces nothing deep enough to actually demonstrate competence in any of it
-
-**Decision:** Stop cleanly after DevSecOps (Trivy complete, Vault partial), and move directly into the production platform work.
-
-**Consequences:** Backstage, approval-gated multi-environment pipelines, FinOps tooling, and Velero-based disaster recovery are gaps in this portfolio's coverage, and they're named as gaps rather than hidden. In exchange, the production platform work — three meshed services, real chaos experiments with stated hypotheses, an incident drill with a genuine postmortem — got the full attention that shallow coverage of eight areas would have diluted. Given limited time, depth on the integrative capstone work was judged more valuable to demonstrate than breadth across every remaining checklist item.
