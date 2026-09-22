@@ -8,6 +8,7 @@ See [architecture.md](./architecture.md) for the full diagram — request path, 
 <!-- diagram goes here -->
 
 ## Platform Tour
+No recorded walkthrough — see [platform-tour.md](./platform-tour.md) for a written tour covering the same ground: GitOps sync, the live dashboard, a chaos experiment recovering, and an alert firing end to end.
 <!-- written walkthrough — what a demo would show, told in prose -->
 
 ## What I Built
