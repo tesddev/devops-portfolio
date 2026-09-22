@@ -5,7 +5,8 @@ Provisioned an EC2 Ubuntu server, hardened SSH (key-only, custom port, non-root)
 Repo: https://github.com/tesddev/server-bootstrap
 
 ## API Development, Deployment, Docker & CI/CD
-Built a FastAPI service, ran it under systemd, put Nginx in front as a reverse proxy, then containerized it with a multi-stage Dockerfile and stood up CI (lint/test/build) and CD (build → push → SSH deploy → smoke test) in GitHub Actions. **Learned:** GHCR's first push needs explicit package-to-repo linkage under "Manage Actions access" — `GITHUB_TOKEN` alone silently isn't enough, and the failure mode doesn't say why. **Would do differently:** set up Buildx multi-platform builds from day one instead of hitting an arm64/amd64 crash-loop on the EC2 host after developing on Apple Silicon.
+Built a FastAPI service, ran it under systemd, put Nginx in front as a reverse proxy, then containerized it with a multi-stage Dockerfile and stood up CI (lint/test/build) and CD (build → push → SSH deploy → smoke test) in GitHub Actions.\n 
+**Learned:** GHCR's first push needs explicit package-to-repo linkage under "Manage Actions access" — `GITHUB_TOKEN` alone silently isn't enough, and the failure mode doesn't say why. **Would do differently:** set up Buildx multi-platform builds from day one instead of hitting an arm64/amd64 crash-loop on the EC2 host after developing on Apple Silicon.
 Repo: https://github.com/tesddev/fastapi-nginx-service
 
 ## Infrastructure as Code — Terraform & Ansible
