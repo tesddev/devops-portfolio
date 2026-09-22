@@ -1,4 +1,4 @@
-# DevOps Platform — 12 Weeks, Zero to Production-Grade
+# DevOps Platform — Zero to Production-Grade
 
 ## Overview
 This is a production-grade DevOps/SRE platform built over 12 weeks, starting from a bare Ubuntu server and ending with a three-service microservices platform on EKS — managed end-to-end through GitOps, meshed for encrypted service-to-service traffic, observed with metrics, logs, and traces, alerted on an SLO error budget, and stress-tested with real chaos engineering experiments against stated hypotheses. Every piece here was actually deployed, broken, and fixed — not just described. Two originally planned areas (a broader internal-platform layer, and full secrets/RBAC/network-policy hardening) were consciously cut short partway through to protect AWS budget and put full depth into the final integrative platform work instead; that trade-off, and why it was made, is documented in [ADR.md](./ADR.md).
