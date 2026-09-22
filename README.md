@@ -67,4 +67,4 @@ See [ADR.md](./ADR.md) — six decisions: cloud provider, Kubernetes distributio
 - AWS: EC2, EKS, VPC, [IAM/OIDC](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect), S3, DynamoDB, ALB
 
 ## Blog Post
-<!-- link once published -->
+Published on [Medium](https://medium.com/@tesleem.amuda/i-broke-my-kubernetes-platform-on-purpose-building-and-testing-resilience-with-chaos-engineering-27f4099323ae) and [LinkedIn](https://www.linkedin.com/pulse/i-broke-my-kubernetes-platform-purpose-building-testing-tesleem-amuda-kzine/) — "I Broke My Kubernetes Platform on Purpose: Building and Testing Resilience with Chaos Engineering." A longer, unpublished write-up covering the full build end to end is also in this repo: [blog-post.md](./blog-post.md).
