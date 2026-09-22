@@ -10,7 +10,7 @@ See [architecture.md](./architecture.md) for the full diagram — request path, 
 ## Platform Tour
 <!-- written walkthrough — what a demo would show, told in prose -->
 
-## Stages
+## What I Built
 <!-- one entry per stage, link to repo + one-paragraph summary -->
 
 ## Architecture Decisions
