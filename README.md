@@ -4,6 +4,7 @@
 <!-- 1 paragraph: what this repo is, what the platform does, who it's for -->
 
 ## Architecture
+See [architecture.md](./architecture.md) for the full diagram — request path, service mesh, and the GitOps control loop that keeps the cluster reconciled.
 <!-- diagram goes here -->
 
 ## Platform Tour
