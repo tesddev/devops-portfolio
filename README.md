@@ -15,6 +15,7 @@ No recorded walkthrough — see [platform-tour.md](./platform-tour.md) for a wri
 <!-- one entry per stage, link to repo + one-paragraph summary -->
 
 ## Architecture Decisions
+See [ADR.md](./ADR.md) — six decisions: cloud provider, Kubernetes distribution, GitOps tool, secrets management, service mesh, and the call to stop before Platform Engineering.
 <!-- link to ADR.md -->
 
 ## Technologies Used
